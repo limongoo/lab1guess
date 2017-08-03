@@ -16,14 +16,14 @@ var question2 = prompt("Where was I born? (Indonesia, Japan or Thailand");
     alert ("Try again please.");
     while (question2 != "Indonesia") {
       prompt("Where was I born? (Indonesia, Japan or Thailand");
-      if (question2 === "Indonesia"){
+      if ("Indonesia"){
         alert ("You are correct!");
+        break;
       }
       else {
         alert ("Try again please.");
       }
     }
-
   }
 
 var question3 = prompt("What's my favorite color?");
