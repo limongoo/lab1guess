@@ -8,15 +8,16 @@ var question1 = prompt("Do I like tacos? (yes or no)");
     alert ("Sadface, you guessed incorrectly.");
   }
 
+var correct = "Indonesia";
 var question2 = prompt("Where was I born? (Indonesia, Japan or Thailand");
-  if (question2 === "Indonesia") {
+  if (question2 === correct) {
     alert ("You are correct!");
   }
   else {
     alert ("Try again please.");
-    while (question2 != "Indonesia") {
+    while (question2 != correct) {
       prompt("Where was I born? (Indonesia, Japan or Thailand");
-      if ("Indonesia"){
+      if (correct){
         alert ("You are correct!");
         break;
       }
