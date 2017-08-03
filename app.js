@@ -10,14 +10,14 @@ var question1 = prompt("Do I like tacos? (yes or no)");
 
 var correct = "Indonesia";
 var question2 = prompt("Where was I born? (Indonesia, Japan or Thailand");
-  if (question2 === correct) {
+  if (question2 === correct.toLowerCase()) {
     alert ("You are correct!");
   }
   else {
     alert ("Try again please.");
-    while (question2 != correct) {
+    while (question2 != correct.toLowerCase()) {
       prompt("Where was I born? (Indonesia, Japan or Thailand");
-      if (correct){
+      if (correct.toLowerCase()){
         alert ("You are correct!");
         break;
       }
