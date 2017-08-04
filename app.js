@@ -11,24 +11,17 @@ var question1 = prompt("Do I like tacos?", "yes or no");
 
 // question 2
 var correct = "Indonesia";
-var question2 = prompt("Where was I born? Indonesia, Japan or Thailand");
-  if (question2 === correct.toLowerCase()) {
-    alert ("You are correct!");
-  }
-  else {
-    alert ("Try again please.");
+var question2 = "";
     while (question2 != correct.toLowerCase()) {
-      prompt("Where was I born? Indonesia, Japan or Thailand");
-      if (correct.toLowerCase()){
+      question2 = prompt("Where was I born? Indonesia, Japan or Thailand");
+      if (question2 === correct.toLowerCase()){
         alert ("You are correct!");
         break;
       }
       else {
         alert ("Try again please.");
       }
-
     }
-  }
 
 // question 3
 var question3 = prompt("What's my favorite color?");
