@@ -1,5 +1,5 @@
 body {
-  background: #e0e0e0;
+  background: #e0e0e0 url("geometry2.png") repeat fixed center;
   color: #424242;
   font-family: monospace;
 
@@ -25,7 +25,7 @@ body {
 }
 
 #quizButton {
-  background-color: yellow;
+  background-color: #FFD740;
   color: black;
   padding: 10px 20px;
   border: 0px;
