@@ -8,3 +8,18 @@ body {
 .content {
   padding: 10%;
 }
+
+
+
+.container {
+  position: relative;
+}
+
+.container img {
+  position: absolute;
+  right: -200px;
+  top: -400px;
+  overflow: hidden;
+  opacity: 0.3;
+  z-index: 0;
+}
