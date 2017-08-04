@@ -21,12 +21,12 @@ var question2 = prompt("Where was I born? Indonesia, Japan or Thailand");
       prompt("Where was I born? Indonesia, Japan or Thailand");
       if (correct.toLowerCase()){
         alert ("You are correct!");
-
+        break;
       }
       else {
         alert ("Try again please.");
       }
-      break;
+
     }
   }
 
