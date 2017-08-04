@@ -30,5 +30,15 @@ body {
   padding: 10px 20px;
   border: 0px;
   font-size: 12px;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 4px 4px 30px -9px rgba(0,0,0,0.46);
+-moz-box-shadow: 4px 4px 30px -9px rgba(0,0,0,0.46);
+box-shadow: 4px 4px 30px -9px rgba(0,0,0,0.46);
+}
 
+#quizButton:hover {
+  margin: -5px 0 0;
+  -webkit-box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.52);
+-moz-box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.52);
+box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.52);
 }
