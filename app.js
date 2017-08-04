@@ -1,5 +1,8 @@
 console.log('start');
 
+// quiz function
+function promptQuiz(){
+
 // question 1
 var question1 = prompt("Do I like tacos?", "yes or no");
   if (question1 === "yes") {
@@ -32,7 +35,7 @@ var question3 = prompt("What's my favorite color?");
     alert ("You are wrong.");
   }
 
-
+}
 
 
 console.log('end');
