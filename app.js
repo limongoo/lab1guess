@@ -1,6 +1,6 @@
 console.log('start');
 
-var question1 = prompt("Do I like tacos? (yes or no)");
+var question1 = prompt("Do I like tacos?", "yes/no");
   if (question1 === "yes") {
     alert ("You are correct, I love tacos!");
   }
@@ -32,10 +32,10 @@ var question3 = prompt("What's my favorite color?");
     alert ("You are correct!");
   }
   else {
-    alert ("You are wrong.")
+    alert ("You are wrong.");
   }
 
 
 
 
-console.log('end')
+console.log('end');
