@@ -1,10 +1,11 @@
-console.log('start');
-
-var counterCorrect = 0;
-var counterWrong = 0;
+  console.log('start');
 
 // quiz function
 function promptQuiz(){
+
+// counter
+var counterCorrect = 0;
+var counterWrong = 0;
 
 // name
 var userName = prompt("What's your name:");
@@ -20,11 +21,11 @@ var userName = prompt("What's your name:");
 var question1 = prompt("Do I like tacos?", "yes or no");
   if (question1 === "yes") {
     alert ("You are correct, I love tacos!");
-    counterCorrect++;
+    counterCorrect+=1;
   }
   else {
     alert ("Sadface, you guessed incorrectly.");
-    counterWrong++;
+    counterWrong+=1;
   }
 
 // question 2
@@ -34,12 +35,12 @@ var question2 = "";
       question2 = prompt("Where was I born? Indonesia, Japan or Thailand");
       if (question2 === correct.toLowerCase()){
         alert ("You are correct!");
-        counterCorrect++;
+        counterCorrect+=1;
         break;
       }
       else {
         alert ("Try again please.");
-        counterWrong++;
+        counterWrong+=1;
       }
     }
 
@@ -47,19 +48,21 @@ var question2 = "";
 var question3 = prompt("What's my favorite color?");
   if (question3 === "black") {
     alert ("You are correct!");
-    counterCorrect++;
+    counterCorrect+=1;
   }
   else {
     alert ("You are wrong.");
-    counterWrong++;
+    counterWrong+=1;
   }
-}// End function
 
-// Report counter
-
+// add counter to page
 document.getElementById('yes').innerHTML = counterCorrect;
 document.getElementById('no').innerHTML = counterWrong;
 
 console.log(counterCorrect);
 console.log(counterWrong);
-console.log('end');
+
+}// End function
+
+// Report counter
+  console.log('end');
