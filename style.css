@@ -7,12 +7,14 @@ body {
 
 .content {
   padding: 10%;
+  z-index: 100;
 }
 
 
 
 .container {
   position: relative;
+  z-index: 1;
 }
 
 .container img {
@@ -21,10 +23,11 @@ body {
   top: -400px;
   overflow: hidden;
   opacity: 0.3;
-  z-index: 0;
+
 }
 
 #quizButton {
+  z-index: 1001;
   background-color: #FFD740;
   color: black;
   padding: 10px 20px;
