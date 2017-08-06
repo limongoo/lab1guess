@@ -6,6 +6,16 @@ var counterWrong = 0;
 // quiz function
 function promptQuiz(){
 
+// name
+var userName = prompt("What's your name:");
+  if (userName == "") {
+    document.getElementById('name').innerHTML = "Welcome, robot person, whoever you are!";
+  }
+  else {
+    document.getElementById('name').innerHTML = ("Welcome, "+userName+"! You're not a robot!");
+  }
+
+
 // question 1
 var question1 = prompt("Do I like tacos?", "yes or no");
   if (question1 === "yes") {
@@ -43,9 +53,10 @@ var question3 = prompt("What's my favorite color?");
     alert ("You are wrong.");
     counterWrong++;
   }
-}
+}// End function
 
 // Report counter
+
 document.getElementById('yes').innerHTML = counterCorrect;
 document.getElementById('no').innerHTML = counterWrong;
 
