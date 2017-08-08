@@ -59,6 +59,8 @@ var question3 = prompt("What's my favorite color?");
 document.getElementById('yes').innerHTML = counterCorrect;
 document.getElementById('no').innerHTML = counterWrong;
 
+document.getElementById('q1').innerHTML = question1;
+
 console.log(counterCorrect);
 console.log(counterWrong);
 
