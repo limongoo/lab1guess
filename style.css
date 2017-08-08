@@ -20,9 +20,10 @@ body {
 .container img {
   position: absolute;
   right: -200px;
-  top: -400px;
+  top: -800px;
   overflow: hidden;
   opacity: 0.3;
+  z-index: 1;
 
 }
 
