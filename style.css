@@ -24,8 +24,8 @@ body {
   overflow: hidden;
   opacity: 0.3;
   z-index: -1;
-
 }
+
 
 #quizButton {
   z-index: 1001;
