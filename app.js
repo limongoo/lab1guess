@@ -6,6 +6,7 @@ function promptQuiz(){
 // counter
 var counterCorrect = 0;
 var counterWrong = 0;
+var totalClick = 0;
 
 // name
 var userName = prompt("What's your name:");
@@ -22,10 +23,12 @@ var question1 = prompt("Do I like tacos?", "yes or no");
   if (question1 === "yes") {
     alert ("You are correct, I love tacos!");
     counterCorrect+=1;
+    totalClick++;
   }
   else {
     alert ("Sadface, you guessed incorrectly.");
     counterWrong+=1;
+    totalClick++;
   }
 
 // question 2
@@ -36,11 +39,13 @@ var question2 = "";
       if (question2 === correct.toLowerCase()){
         alert ("You are correct!");
         counterCorrect+=1;
+        totalClick++;
         break;
       }
       else {
         alert ("Try again please.");
         counterWrong+=1;
+        totalClick++;
       }
     }
 
@@ -49,15 +54,18 @@ var question3 = prompt("What's my favorite color?");
   if (question3 === "black") {
     alert ("You are correct!");
     counterCorrect+=1;
+    totalClick++;
   }
   else {
     alert ("You are wrong.");
     counterWrong+=1;
+    totalClick++;
   }
 
 // add counter to page
 document.getElementById('yes').innerHTML = counterCorrect;
 document.getElementById('no').innerHTML = counterWrong;
+document.getElementById('click').innerHTML = totalClick;
 
 // add answers to page
 document.getElementById('q1').innerHTML = question1+".";
