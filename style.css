@@ -2,15 +2,20 @@ body {
   background: #e0e0e0 url("geometry2.png") repeat fixed center;
   color: #424242;
   font-family: monospace;
+}
 
+.wrong {
+  color: red;
+}
+
+.correct {
+  color: green;
 }
 
 .content {
   padding: 10%;
   z-index: 100;
 }
-
-
 
 .container {
   position: relative;
@@ -25,7 +30,6 @@ body {
   opacity: 0.3;
   z-index: -1;
 }
-
 
 #quizButton {
   z-index: 1001;

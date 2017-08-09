@@ -3,7 +3,10 @@
 // quiz function
 // function promptQuiz(){
 
-
+// counter
+var counterCorrect = 0;
+var counterWrong = 0;
+var totalClick = 0;
 
 // name
 var userName = prompt("What's your name:");
@@ -23,10 +26,7 @@ askQuiz("What's my favorite color?", "black", "q3");
 
 // ask function
 function askQuiz(question, answer, result) {
-  // counter
-  var counterCorrect = 0;
-  var counterWrong = 0;
-  var totalClick = 0;
+
 
   var guess = prompt(question);
   if (guess.toLowerCase() === answer.toLowerCase()) {
