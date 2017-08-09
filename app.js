@@ -19,27 +19,27 @@ var userName = prompt("What's your name:");
 
 
 
-question("Do I like tacos?", "yes", "q1");
-question("Where was I born? Indonesia or Japan?", "Indonesia", "q2");
-question("What's my favorite color?", "black", "q3");
+askQuiz("Do I like tacos?", "yes", "q1");
+askQuiz("Where was I born? Indonesia or Japan?", "Indonesia", "q2");
+askQuiz("What's my favorite color?", "black", "q3");
 
 
 // ask function
-function askQuestions(question, answer, result) {
+function askQuiz(question, answer, result) {
   var guess = prompt(question);
   if (guess.toLowerCase() === answer.toLowerCase()) {
-    document.getElementById(result).innerHTML = "Muy bueno!";
+    document.getElementById(result).innerHTML = "Correct, bueno!";
     counterCorrect++;
     totalClick++;
   }
   else {
-    document.getElementById(result).innerHTML = "Muy no bueno!";
+    document.getElementById(result).innerHTML = "Wrong, no bueno!";
     counterWrong++;
     totalClick++;
   }
 }
 
-askQuestions()
+askQuiz();
 
 // question 1
 // var question1 = prompt("Do I like tacos?", "yes or no");
