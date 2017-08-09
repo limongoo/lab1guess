@@ -18,49 +18,68 @@ var userName = prompt("What's your name:");
   }
 
 
+
+var question = ("Do I like tacos?", "yes", "q1");
+var question = ("Where was I born? Indonesia or Japan?", "Indonesia", "q2");
+var question = ("What's my favorite color?", "black", "q3");
+
+// ask function
+
+function askQuestions(question, answer, results) {
+  var guess = prompt(question);
+  if (guess == answer){
+    document.getElementById(results).innerHTML = "Correct, you are correct! Bueno!";
+  }
+  else {
+    document.getElementById(results).innerHTML = "You answered incorrectly. Sadface!";
+  }
+}
+
+
+
 // question 1
-var question1 = prompt("Do I like tacos?", "yes or no");
-  if (question1 === "yes") {
-    alert ("You are correct, I love tacos!");
-    counterCorrect+=1;
-    totalClick++;
-  }
-  else {
-    alert ("Sadface, you guessed incorrectly.");
-    counterWrong+=1;
-    totalClick++;
-  }
-
-// question 2
-var correct = "Indonesia";
-var question2 = "";
-    while (question2 != correct.toLowerCase()) {
-      question2 = prompt("Where was I born? Indonesia, Japan or Thailand");
-      if (question2 === correct.toLowerCase()){
-        alert ("You are correct!");
-        counterCorrect+=1;
-        totalClick++;
-        break;
-      }
-      else {
-        alert ("Try again please.");
-        counterWrong+=1;
-        totalClick++;
-      }
-    }
-
-// question 3
-var question3 = prompt("What's my favorite color?");
-  if (question3 === "black") {
-    alert ("You are correct!");
-    counterCorrect+=1;
-    totalClick++;
-  }
-  else {
-    alert ("You are wrong.");
-    counterWrong+=1;
-    totalClick++;
-  }
+// var question1 = prompt("Do I like tacos?", "yes or no");
+//   if (question1 === "yes") {
+//     alert ("You are correct, I love tacos!");
+//     counterCorrect+=1;
+//     totalClick++;
+//   }
+//   else {
+//     alert ("Sadface, you guessed incorrectly.");
+//     counterWrong+=1;
+//     totalClick++;
+//   }
+//
+// // question 2
+// var correct = "Indonesia";
+// var question2 = "";
+//     while (question2 != correct.toLowerCase()) {
+//       question2 = prompt("Where was I born? Indonesia, Japan or Thailand");
+//       if (question2 === correct.toLowerCase()){
+//         alert ("You are correct!");
+//         counterCorrect+=1;
+//         totalClick++;
+//         break;
+//       }
+//       else {
+//         alert ("Try again please.");
+//         counterWrong+=1;
+//         totalClick++;
+//       }
+//     }
+//
+// // question 3
+// var question3 = prompt("What's my favorite color?");
+//   if (question3 === "black") {
+//     alert ("You are correct!");
+//     counterCorrect+=1;
+//     totalClick++;
+//   }
+//   else {
+//     alert ("You are wrong.");
+//     counterWrong+=1;
+//     totalClick++;
+//   }
 
 // add counter to page
 document.getElementById('yes').innerHTML = counterCorrect;
@@ -68,9 +87,9 @@ document.getElementById('no').innerHTML = counterWrong;
 document.getElementById('click').innerHTML = totalClick;
 
 // add answers to page
-document.getElementById('q1').innerHTML = question1+".";
-document.getElementById('q2').innerHTML = question2+".";
-document.getElementById('q3').innerHTML = question3+".";
+document.getElementById('q1').innerHTML = question+".";
+document.getElementById('q2').innerHTML = question+".";
+document.getElementById('q3').innerHTML = question+".";
 
 
 console.log(counterCorrect);
