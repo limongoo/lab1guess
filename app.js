@@ -53,6 +53,11 @@ document.getElementById('q1').innerHTML = question+".";
 document.getElementById('q2').innerHTML = question+".";
 document.getElementById('q3').innerHTML = question+".";
 
+// clear quiz
+// function clearQuiz() {
+//   window.location.reload()
+// }
+
 
 console.log(counterCorrect);
 console.log(counterWrong);
