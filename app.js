@@ -1,7 +1,7 @@
   console.log('start');
 
 // quiz function
-// function promptQuiz(){
+function promptQuiz(){
 
 // counter
 var counterCorrect = 0;
@@ -57,7 +57,7 @@ document.getElementById('q3').innerHTML = question+".";
 console.log(counterCorrect);
 console.log(counterWrong);
 
-// }// End function
+}// End function
 
 // Report counter
   console.log('end');
