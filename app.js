@@ -1,7 +1,7 @@
   console.log('start');
 
 // quiz function
-function promptQuiz(){
+// function promptQuiz(){
 
 // counter
 var counterCorrect = 0;
@@ -14,28 +14,32 @@ var userName = prompt("What's your name:");
     document.getElementById('name').innerHTML = "Welcome, robot person, whoever you are!";
   }
   else {
-    document.getElementById('name').innerHTML = ("Welcome, "+userName+"! You're not a robot!");
+    document.getElementById('name').innerHTML = "Welcome, "+userName+"! You're not a robot!";
   }
 
 
 
-var question = ("Do I like tacos?", "yes", "q1");
-var question = ("Where was I born? Indonesia or Japan?", "Indonesia", "q2");
-var question = ("What's my favorite color?", "black", "q3");
+question("Do I like tacos?", "yes", "q1");
+question("Where was I born? Indonesia or Japan?", "Indonesia", "q2");
+question("What's my favorite color?", "black", "q3");
+
 
 // ask function
-
-function askQuestions(question, answer, results) {
+function askQuestions(question, answer, result) {
   var guess = prompt(question);
-  if (guess == answer){
-    document.getElementById(results).innerHTML = "Correct, you are correct! Bueno!";
+  if (guess.toLowerCase() === answer.toLowerCase()) {
+    document.getElementById(result).innerHTML = "Muy bueno!";
+    counterCorrect++;
+    totalClick++;
   }
   else {
-    document.getElementById(results).innerHTML = "You answered incorrectly. Sadface!";
+    document.getElementById(result).innerHTML = "Muy no bueno!";
+    counterWrong++;
+    totalClick++;
   }
 }
 
-
+askQuestions()
 
 // question 1
 // var question1 = prompt("Do I like tacos?", "yes or no");
@@ -95,7 +99,7 @@ document.getElementById('q3').innerHTML = question+".";
 console.log(counterCorrect);
 console.log(counterWrong);
 
-}// End function
+// }// End function
 
 // Report counter
   console.log('end');
